@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=3, initial-scale=1.0" />
@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Geist:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="./main.js" defer></script>
   </head>
   <body>
     <header
@@ -25,15 +26,29 @@
         <p class="text-2xl sm:text-5xl lg:text-2xl">LOGO</p>
       </a>
 
-      <nav>
-        <img src="./images/burger-bar (1).png" alt="menu burger" />
-      </nav>
+      <img
+        src="./images/burger-bar (1).png"
+        alt="menu burger"
+        id="menuBurger"
+      />
     </header>
 
     <main>
       <section
-        class="flex flex-col items-cdnter justify-center gap-4 px-6 bg-[url(/images/bg_header.jpg)] bg-cover h-screen text-white"
+        class="flex flex-col items-center justify-center gap-4 px-6 bg-[url(/images/bg_header.jpg)] bg-cover h-screen text-white"
       >
+        <div class="filtreBackground hidden"></div>
+        <div class="case w-3xs sm:w-96">
+          <nav class="text-2xl flex flex-col p-3 gap-4">
+            <a href="#">Accueil</a>
+            <a href="#Ultricies-Aenean">Ultricies Aenean </a>
+            <a href="#Ligula">Ligula</a>
+            <a href="#Neque porro">Neque porro</a>
+            <a href="#Mozaique">Mozaique</a>
+            <a href="#Contact">Contact</a>
+          </nav>
+        </div>
+
         <div
           class="flex flex-col items-center sm:flex-col sm:gap-30 lg:flex-col lg:gap-10"
         >
@@ -75,49 +90,49 @@
         </div>
       </section>
 
+
       <section
+        id="Ultricies-Aenean"
+
+        
         class="flex flex-col gap-4 p-14 md:items-center lg:item-center lg:flex-row justify-center"
       >
         <article
-          class="flex flex-col items-center md:gap-4 md:w-120 lg:text-center"
+          class="flex flex-col items-center md:gap-4 md:w-120 lg:text-center lg:justify-center"
         >
-          <section>
-            <svg
-              class="w-8"
-              fill="#000000"
-              height="200px"
-              width="200px"
-              version="1.1"
-              id="Capa_1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              viewBox="0 0 512 512"
-              xml:space="preserve"
-            >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g
-                id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></g>
-              <g id="SVGRepo_iconCarrier">
-                <g>
-                  <path
-                    d="M502.625,105.375l-96-96c-12.5-12.5-32.75-12.5-45.25,0l-36.688,36.688l141.25,141.25l36.688-36.688 C515.125,138.125,515.125,117.875,502.625,105.375z"
-                  ></path>
-                  <path
-                    d="M0.953,472.234c-2.719,10.906,0.469,22.438,8.422,30.391C15.453,508.703,23.625,512,32,512 c2.578,0,5.187-0.312,7.766-0.953l102.922-25.734l-116-116L0.953,472.234z"
-                  ></path>
-                  <path
-                    d="M361.375,129l-59.313-59.313c0,0-263.313,263.396-265.063,265.313l59,59.375L361.375,129z"
-                  ></path>
-                  <path
-                    d="M118.625,416L178,475c1.938-1.875,265.313-265.063,265.313-265.063L384,150.625L118.625,416z"
-                  ></path>
-                </g>
+          <svg
+            class="w-8"
+            fill="#000000"
+            version="1.1"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 512 512"
+            xml:space="preserve"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <g>
+                <path
+                  d="M502.625,105.375l-96-96c-12.5-12.5-32.75-12.5-45.25,0l-36.688,36.688l141.25,141.25l36.688-36.688 C515.125,138.125,515.125,117.875,502.625,105.375z"
+                ></path>
+                <path
+                  d="M0.953,472.234c-2.719,10.906,0.469,22.438,8.422,30.391C15.453,508.703,23.625,512,32,512 c2.578,0,5.187-0.312,7.766-0.953l102.922-25.734l-116-116L0.953,472.234z"
+                ></path>
+                <path
+                  d="M361.375,129l-59.313-59.313c0,0-263.313,263.396-265.063,265.313l59,59.375L361.375,129z"
+                ></path>
+                <path
+                  d="M118.625,416L178,475c1.938-1.875,265.313-265.063,265.313-265.063L384,150.625L118.625,416z"
+                ></path>
               </g>
-            </svg>
-          </section>
+            </g>
+          </svg>
 
           <h2 class="font-bold">Consectetur Risus</h2>
           <p class="text-center">
@@ -127,10 +142,11 @@
         </article>
 
         <article
-          class="flex flex-col textitems-center md:gap-4 md:w-120 lg:text-center"
+          class="flex flex-col items-center md:gap-4 md:w-120 lg:text-center"
         >
-          <section class="w-50">
+         
             <svg
+            class="w-8"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -151,7 +167,7 @@
                 ></path>
               </g>
             </svg>
-          </section>
+        
 
           <h2 class="font-bold">Ultricies Aenean</h2>
           <p>
@@ -161,36 +177,33 @@
         </article>
 
         <article
-          class="flex flex-col text-center item-center md:gap-4 md:w-120 lg:text-center"
+          class="flex flex-col items-center md:gap-4 md:w-120 lg:text-center"
         >
-          <section>
-            <svg
-              class="w-8"
-              fill="#000000"
-              height="200px"
-              width="200px"
-              version="1.1"
-              id="Capa_1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              viewBox="0 0 278.045 278.045"
-              xml:space="preserve"
-            >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g
-                id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></g>
-              <g id="SVGRepo_iconCarrier">
-                <g>
-                  <path
-                    d="M224.093,0H53.952c-4.971,0-9,4.029-9,9v260.045c0,3.592,2.136,6.839,5.433,8.263c3.298,1.425,7.126,0.75,9.74-1.713 l78.897-74.352l78.897,74.352c1.704,1.605,3.923,2.45,6.175,2.45c1.203,0,2.417-0.241,3.565-0.737 c3.297-1.423,5.433-4.671,5.433-8.263V9C233.093,4.029,229.064,0,224.093,0z M215.093,18v13.158H62.952V18H215.093z M145.196,182.326c-1.733-1.633-3.953-2.45-6.173-2.45s-4.439,0.817-6.173,2.45l-69.897,65.871V49.158h152.141v199.039 L145.196,182.326z"
-                  ></path>
-                </g>
+          <svg
+            class="w-8"
+            fill="#000000"
+            version="1.1"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 278.045 278.045"
+            xml:space="preserve"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <g>
+                <path
+                  d="M224.093,0H53.952c-4.971,0-9,4.029-9,9v260.045c0,3.592,2.136,6.839,5.433,8.263c3.298,1.425,7.126,0.75,9.74-1.713 l78.897-74.352l78.897,74.352c1.704,1.605,3.923,2.45,6.175,2.45c1.203,0,2.417-0.241,3.565-0.737 c3.297-1.423,5.433-4.671,5.433-8.263V9C233.093,4.029,229.064,0,224.093,0z M215.093,18v13.158H62.952V18H215.093z M145.196,182.326c-1.733-1.633-3.953-2.45-6.173-2.45s-4.439,0.817-6.173,2.45l-69.897,65.871V49.158h152.141v199.039 L145.196,182.326z"
+                ></path>
               </g>
-            </svg>
-          </section>
+            </g>
+          </svg>
+
           <h2 class="font-bold">Cras Sollicitudin</h2>
           <p>
             Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
@@ -199,7 +212,9 @@
         </article>
       </section>
 
+
       <section
+        id="Ligula"
         class="bg-[url(/images/bg_nuage.jpg)] bg-cover bg-center text-amber-50 px-5 sm:px-5 md:px-5 lg:pl-120 pr-20"
       >
         <div class="flex flex-col gap-10 px-8 py-10 bg-[#71a9c9]/30">
@@ -231,7 +246,10 @@
         </div>
       </section>
 
-      <section class="flex flex-col p-4 lg:flex-row lg:gap-8 lg:px-30 py-10">
+      <section
+        id="Neque porro"
+        class="flex flex-col p-4 lg:flex-row lg:gap-8 lg:px-30 py-10"
+      >
         <div class="flex flex-col gap-8 lg:w-7/10">
           <h2
             class="flex flex-col text-3xl sm:text-4xl md:text-5xl lg:text-3xl"
@@ -276,6 +294,7 @@
       </section>
 
       <section
+        id="Mozaique"
         class="bg-[url(/images/bg_appareil_photo.jpg)] bg cover bg-center text-amber-50 px-5 md:px-5 lg:pl-20 lg:pr-130"
       >
         <div
@@ -371,6 +390,9 @@
         </div>
       </section> -->
 
+
+
+
       <section class="bg-gray-300 py-16 sm:px-4 sm:flex sm:gap-4 lg:px-20">
         <!-- prmeiere colonne -->
         <div class="flex flex-col gap-4 sm:w-1/3 lg:w-2/3">
@@ -398,13 +420,15 @@
 
         <!-- deuxieme colonne -->
         <div class="hidden sm:flex sm:w-2/3 sm:gap-4 lg:w-1/3 lg:flex-col">
-          <img src="./images/776.jpeg" alt="montagne" 
-          class="sm:w-1/2 lg:w-full"/>
+          <img
+            src="./images/776.jpeg"
+            alt="montagne"
+            class="sm:w-1/2 lg:w-full"
+          />
 
           <!-- troisieme colonne tablette -->
           <div class="flex flex-col sm:w-1/2 sm:gap-4 lg:w-full">
-            <img src="./images/800.jpeg" alt="pont rouge" 
-            class="lg:hidden" />
+            <img src="./images/800.jpeg" alt="pont rouge" class="lg:hidden" />
 
             <img src="./images/439.jpeg" alt="avion" />
           </div>
@@ -448,7 +472,13 @@
         />
       </section>
 
+
+
+
+      
+
       <section
+        id="Contact"
         class="flex flex-col bg-[url(/images/bg_newsletter.jpg)] text-white px-8 py-15 gap-7"
       >
         <div class="bg-gray-400/ backdrop-invert"></div>
@@ -490,10 +520,10 @@
         <span class="text-[#319294]">The Maitre jet d'ail</span>
       </p>
       <nav
-        class="flex flex-row justify-end gap-2 sm:w-3 sm:h-auto sm:flex sm:justify-end md:flex md:flex-row md:justify-end md:w-7 md:h-auto md:gap-5 lg:flex lg:flex-row lg:justify-end"
+        class="flex flex-row justify-end gap-2 "
       >
-        <img src="./images/facebook.png" alt="" />
-        <img src="./images/gazouillement.png" alt="" />
+        <img src="./images/facebook.png" alt="logo facebook" />
+        <img src="./images/gazouillement.png" alt="logo tweeter" />
       </nav>
     </footer>
   </body>
